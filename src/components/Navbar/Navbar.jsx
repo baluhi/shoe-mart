@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Search, ShoppingBag } from 'lucide-react'
+import { Search, ShoppingBag, Mic,User } from 'lucide-react'
 import './navbar.css';
 const Navbar = () => {
 
@@ -59,18 +59,14 @@ const Navbar = () => {
           
           </ul>
         </div>
-        <form className="d-flex">
-        <Search className="absolute left-2 h-4 w-4 text-muted-foreground" />
-            <input
-              className="form-control me-2"
-              type="search"
-             
-            />
-           
-            <button className="btn btn-outline-success" type="submit">
-           
-            </button>
-          </form>
+
+        <form action="" className="form-control w-25 d-flex justify-content-around align-items-center">
+        <Mic className="icons " />
+        <input type="text " className='form-control border-0' />
+        <Search className=" icons me-3" />
+        <User className=" icons" />
+        </form>
+        
       </div>
     </nav>
   );
